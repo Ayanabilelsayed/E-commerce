@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+:root {
+ 
+  --bg-main: 38 30% 92%;           
+  --bg-card: 40 18% 85%;           
+  --bg-card-hover: 35 22% 78%;     
+
+  --text-primary: 20 8% 14%;     
+  --text-secondary: 25 15% 40%;    
+
+  --accent-gold: 27 17% 36%;       
+  --accent-gold-hover: 26 17% 28%; 
+
+  --border-color: 38 15% 82%;     
+}
+
+.dark {
+  
+  --bg-main: 30 14% 10%;           
+  --bg-card: 20 8% 15%;            
+  --bg-card-hover: 25 10% 20%;     
+
+  --text-primary: 33 28% 85%;      
+  --text-secondary: 25 8% 58%;     
+
+  --accent-gold: 33 28% 85%;       
+  --accent-gold-hover: 33 35% 90%; 
+
+  --border-color: 25 10% 20%;      
+}
+
+@theme {
+ 
+  --color-brand-main: hsl(var(--bg-main));
+  --color-brand-card: hsl(var(--bg-card));
+  --color-brand-card-hover: hsl(var(--bg-card-hover));
+
+  --color-brand-primary: hsl(var(--text-primary));
+  --color-brand-secondary: hsl(var(--text-secondary));
+
+  --color-brand-gold: hsl(var(--accent-gold));
+  --color-brand-gold-hover: hsl(var(--accent-gold-hover));
+
+  --color-brand-border: hsl(var(--border-color));
+}
+
+body {
+  background-color: hsl(var(--bg-main)); 
+  color: hsl(var(--text-primary));       
+  font-family: system-ui, -apple-system, sans-serif;
+}
