@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
 import { myOrder } from "../api/ordersApi"; 
-import OrderCard from '../components/OrderCard'
+import OrderCard from "../components/orderCard";
 import { toast } from 'react-toastify';
 import {
   ShoppingBag,

@@ -22,7 +22,7 @@ import {
   addReview,
   deleteReview,
 } from "../api/ReviewsApi";
-import Loading from "./Loading";
+import Loading from "./loading";
 const RelatedProducts = ({ currentProductId, categoryId }) => {
   const [related, setRelated] = useState([]);
   const [loading, setLoading] = useState(true);

@@ -4,7 +4,7 @@ import FeaturedProducts from "../components/FeaturedProduct";
 import HowItWorks from "../components/HowItWorks";
 import CategorySection from "../components/CategorySection";
 import PromoBanner from "../components/PromoBanner";
-import Loading from "../components/Loading"; 
+import Loading from "../components/loading";
 
 export default function Home() {
   const [loading, setLoading] = useState(true);

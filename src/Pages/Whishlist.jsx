@@ -8,7 +8,7 @@ import {
 } from "../api/wishlistApi";
 import { AddItemToCard, getMyCart, removeItemFromCart } from "../api/cartsApi";
 import { toast } from "react-toastify";
-import Loading from "../components/Loading"; 
+import Loading from "../components/loading";
 
 const Whishlist = () => {
   const [favourit, setFavourit] = useState([]);
